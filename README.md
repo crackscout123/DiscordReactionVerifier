@@ -8,5 +8,3 @@ Then run the main.py file<br />
 # Note
 If you like this repo. and this helped you then STAR this repo.
 
-# Contact
-Discord: Just for fun#4278
