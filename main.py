@@ -16,8 +16,6 @@ bot.channel_id = Config.channel_id
 async def on_ready():
     print("Logged in as "+bot.user.name)
 
-@bot.command()
-async def setup(ctx):
     try:
         message_id = int(bot.message_id)
     except ValueError:
@@ -43,9 +41,9 @@ async def setup(ctx):
         return await ctx.send("Message Not Found")
     
     await message.add_reaction("✅")
-    await ctx.send("Setup Successful")
     
     bot.setup = True
+    print("Bot loded.")
 
 @bot.event
 async def on_raw_reaction_add(payload):
